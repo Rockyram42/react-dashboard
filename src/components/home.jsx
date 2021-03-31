@@ -13,27 +13,30 @@ class Home extends Component {
             id: ""
         }
     }
-    useEffect(() => {
-        props.fetchApiProductData();
-        props.fetchUserTaskData();
-      }, []);
-      const handelViewClick = () => {
-        this.setState(count + 1);
-      };
-      const handelOpen = (task) => {
-        this.setState({modalShow: true,id: task.id })
-      };
-      const result = props.productres;
-      const userTask = props.taskRes;
+     onClickHandelDelete = () => {
+      console.log(value)
+    }
+    // useEffect(() => {
+    //     props.fetchApiProductData();
+    //     props.fetchUserTaskData();
+    //   }, []);
+      // const handelViewClick = () => {
+      //   this.setState(count + 1);
+      // };
+      // const handelOpen = (task) => {
+      //   this.setState({modalShow: true,id: task.id })
+      // };
+      // const result = props.productres;
+      // const userTask = props.taskRes;
       // console.log(result);
-      let perPage, start, end, total;
-      perPage = 100;
-      start = (count - 1) * perPage;
-      end = count * perPage;
-      total = Math.ceil(result.length / perPage);
+      // let perPage, start, end, total;
+      // perPage = 100;
+      // start = (count - 1) * perPage;
+      // end = count * perPage;
+      // total = Math.ceil(result.length / perPage);
       // console.log(total);
     
-      const sliced = result.slice(start, end);
+      // const sliced = result.slice(start, end);
     render() {
         const productData =
         sliced.length !== 0 ? (
