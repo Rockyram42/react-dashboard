@@ -15,6 +15,8 @@ class Home extends Component {
     }
      onClickHandelDelete = () => {
       console.log(value)
+      console.log("hi ");
+      
     }
     // useEffect(() => {
     //     props.fetchApiProductData();
